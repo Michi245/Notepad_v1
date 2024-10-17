@@ -1,0 +1,8 @@
+@font-face {
+    font-family: sofadi ;
+    src: url(./Sofadi_One/SofadiOne-Regular.ttf);
+}
+
+.font-style {
+  font-family: sofadi , Arial, Helvetica, sans-serif;
+}

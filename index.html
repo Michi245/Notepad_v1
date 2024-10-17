@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/fonts/font.css">
+    <link rel="stylesheet" href="styles/standard.css">
+    <script src="./script.js"></script>
+    <script src="./templates/template.js"></script>
+    
+  </head>
+
+  <body class="font-style" onload="renderContent()">
+    <header>
+      <h1>Notizblock</h1>
+    </header>
+
+    <main>
+      <section class="content-width">
+        <div class="inputPosition">
+          <input class="inputTitleDesign" id="inputNoteTitel" type="text" placeholder="add title" />
+        <input
+          id="inputNotes"
+          class="inputNoteDesign"
+          type="text"
+          placeholder="add notes"
+        />
+        <button onclick="pushInputToArray()">Notiz speichern</button>
+        </div>
+      </section>
+
+      <section>
+        <div class="content-width">
+          <h2>MyNotes</h2>
+          <div class="positonNotes" id="myNotes"></div>
+          <h2>Archiv</h2>
+          <div class="positonNotes" id="archivNotes"></div>
+          <h2>Trash</h2>
+          <div class="positonNotes" id="trashNotes"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>@ copyright 2024</span>
+    </footer>
+  </body>
+</html>
